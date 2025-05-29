@@ -1,0 +1,64 @@
+:root {
+
+	/*					COLORS				 */
+
+	--footer-background: #222222;
+	--footer-color: #ffffff;
+	--footer-a: #68b1ff;
+	--footer-a-hover: #00d0ff;
+	--footer-a-visited: #e15eff;
+	--footer-a-active: #ff6363;
+
+	
+	/*			PADDING				*/
+
+	/* Padding order:
+	1,2 - top-bottom, right-left
+	1,2,3 - top, right-left, bottom
+	1,2,3,4 - top, right, bottom, left*/
+	--pad-footer: 0.9em 5.5%;
+	--pad-footer-p: 0.5em 0.4rem;
+
+}
+
+.darkmode {
+
+	/*					COLORS				 */
+
+	--footer-background: #21212f;
+	--footer-color: #ffffff;
+
+}
+
+
+
+footer {
+	background-color: var(--footer-background);
+	color: var(--footer-color);
+	padding: var(--pad-footer);
+	text-align: left;
+	font-size: 0.8rem;
+}
+
+footer p {
+	padding: var(--pad-footer-p);
+}
+
+footer a {
+	color: var(--footer-a);
+}
+
+footer a:visited {
+	color: var(--footer-a-visited);
+}
+
+footer a:hover, footer a:focus {
+	color: var(--footer-a-hover);
+}
+
+footer a:active {
+	color: var(--footer-a-active);
+}
+
+
+

@@ -1,0 +1,24 @@
+{{ define "cssfile" }}
+	<link rel="stylesheet" href="/css/list.css">
+{{ end }}
+
+{{ define "main" }}
+
+	<main>
+
+		{{.Content}}
+
+		{{ range .Pages }}
+			<ul class="list-article">
+				<li>
+					<h2><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
+					<p>{{.Summary}}</p>
+				</li>
+			</ul>
+		{{end}}
+
+		<br>
+
+	</main>
+
+{{ end }}

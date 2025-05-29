@@ -1,0 +1,125 @@
+:root {
+
+	/*					COLORS				 */
+
+	--header-background: #454545;
+	--header-background-hover: #645f5f;
+	--header-a: #cdcbff;
+	--header-a-hover: #ffbad0;
+	--header-deblogo-background: #b5b5b5;
+	--header-border-right: #9e9e9e;
+	--header-border-bottom: #eb0000;
+
+	/* DARK MODE BUTTON */
+	
+	--darkmode-background: #000;
+	--darkmode-fill: #FFFF99;
+
+
+	/*			PADDING				*/
+
+	/* Padding order:
+	1,2 - top-bottom, right-left
+	1,2,3 - top, right-left, bottom
+	1,2,3,4 - top, right, bottom, left*/
+	--pad-header-li: 0.61em 0.7em;
+	--pad-header-li-first: 0.1em 0.1em 0.11em 1.3%;
+	--pad-header-li-last: 0.4em 1.6% 0.2em 0.2em;
+
+}
+
+.darkmode {
+
+	/*					COLORS				 */
+
+	--header-background: #454545;
+	--header-background-hover: #645f5f;
+	--header-a: #cdcbff;
+	--header-a-hover: #ffbad0;
+	--header-deblogo-background: #b5b5b5;
+	--header-border-right: #9e9e9e;
+	--header-border-bottom: #eb0000;
+
+	/* DARK MODE BUTTON */
+
+	--darkmode-background: #bfbfbf;
+	--darkmode-fill: #0000ff;
+}
+
+header {
+	font-size: 0.92rem;
+}
+
+header ul {
+	background-color: var(--header-background);
+	border-bottom: 0.3rem solid var(--header-border-bottom);
+}
+
+header ul li {
+	list-style: none;
+	display: inline-block;
+	padding: var(--pad-header-li);
+	border-right: 1px solid var(--header-border-right);
+	margin-left: -0.26em;
+}
+
+header li a {
+	color: var(--header-a);
+	text-decoration: none;
+}
+
+header li a:visited {
+	color: var(--header-a);
+}
+
+
+header li a:hover, header li a:focus {
+	color: var(--header-a-hover);
+}
+
+.header li a:active {
+	color: var(--header-a-hover);
+}
+
+header img {
+	vertical-align: bottom;
+}
+
+header li:first-child {
+	padding: var(--pad-header-li-first);
+	vertical-align: bottom;
+	background-color: var(--header-deblogo-background);
+}
+
+header li:hover, .header li:focus {
+	background-color: var(--header-background-hover);
+}
+
+header li:last-child {
+	padding: var(--pad-header-li-last);
+	float: right;
+}
+
+#theme-switch {
+	height: 2.2em;
+	width: 2.2em;
+	padding: 0;
+	border-radius: 50%;
+	background-color: var(--darkmode-background);
+}
+
+#theme-switch svg {
+	fill: var(--darkmode-fill);
+}
+
+#theme-switch svg:last-child {
+	display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+	display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+	display: block;
+}
